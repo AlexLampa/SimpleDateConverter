@@ -3,6 +3,24 @@ plugins {
     id 'kotlin-android'
 }
 
+ext {
+    PUBLISH_GROUP_ID = 'io.github.alexlampa'
+    PUBLISH_VERSION = '0.0.1'
+    PUBLISH_ARTIFACT_ID = 'simpledateconverter'
+    PUBLISH_DESCRIPTION = 'Simple date converter library'
+    PUBLISH_URL = 'https://github.com/AlexLampa/SimpleDateConverter'
+    PUBLISH_LICENSE_NAME = 'GNU GENERAL PUBLIC LICENSE'
+    PUBLISH_LICENSE_URL = 'https://github.com/AlexLampa/SimpleDateConverter/blob/master/LICENSE'
+    PUBLISH_DEVELOPER_ID = 'AlexLampa'
+    PUBLISH_DEVELOPER_NAME = 'Oleksii'
+    PUBLISH_DEVELOPER_EMAIL = 'Oleksii.Dundar@gmail.com'
+    PUBLISH_SCM_CONNECTION = 'scm:git:github.com/AlexLampa/SimpleDateConverter.git'
+    PUBLISH_SCM_DEVELOPER_CONNECTION = 'scm:git:ssh://github.com/AlexLampa/SimpleDateConverter.git'
+    PUBLISH_SCM_URL = 'https://github.com/AlexLampa/SimpleDateConverter/tree/master'
+}
+
+apply from: "${rootProject.projectDir}/scripts/publish-module.gradle"
+
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
