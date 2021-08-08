@@ -36,3 +36,8 @@ fun String.convertToMillis(inputFormat: String): Long {
         0L
     }
 }
+
+@SuppressLint("SimpleDateFormat")
+fun Long.isToday(): Boolean {
+    return DateUtils.isToday(this)
+}

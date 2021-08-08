@@ -5,7 +5,7 @@ plugins {
 
 ext {
     PUBLISH_GROUP_ID = 'io.github.alexlampa'
-    PUBLISH_VERSION = '0.0.2'
+    PUBLISH_VERSION = '0.0.3'
     PUBLISH_ARTIFACT_ID = 'simpledateconverter'
     PUBLISH_DESCRIPTION = 'Simple date converter library'
     PUBLISH_URL = 'https://github.com/AlexLampa/SimpleDateConverter'
